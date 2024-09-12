@@ -43,7 +43,7 @@ class StationInformation(models.Model):
 	latitude = models.FloatField()
 	longitude = models.FloatField()
 	capacity = models.IntegerField()
-	region_id = models.ForeignKey(SystemRegions, on_delete=models.CASCADE)
+	region_id = models.ForeignKey(SystemRegions, on_delete=models.CASCADE, db_column="region_id")
 
 
 '''
